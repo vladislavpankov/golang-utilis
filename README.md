@@ -1,0 +1,2 @@
+getting used to golang
+:)
