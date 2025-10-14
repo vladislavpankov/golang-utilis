@@ -1,0 +1,67 @@
+# Бинарные файлы
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Папка с собранными бинарниками
+/bin/
+/dist/
+/output/
+
+# Файлы зависимостей Go
+/go.sum
+
+# Кэш Go
+/.cache/
+
+# Папка vendor (если используете)
+/vendor/
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Операционные системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Логи
+*.log
+
+# Конфиги с чувствительной информацией
+.env
+.env.local
+.env.production
+*.local
+config.yaml
+config.json
+secrets.*
+
+# Файлы профилирования и отладки
+*.pprof
+*.prof
+*.trace
+
+# Coverage reports
+*.coverprofile
+coverage.txt
+coverage.html
+
+# Бенчмарки
+*.bench
+
+# Автогенерируемые файлы
+/assets/bindata.go
+/public/assets/compiled
+
+# Временные файлы
+/tmp/
+/temp/
