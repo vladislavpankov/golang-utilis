@@ -15,7 +15,7 @@ func main() {
 
 	for line, n := range count {
 		if n > 1 {
-			fmt.Printf("%d\t %s\n", n, line)
+			fmt.Printf("number of lines:%d\t contain:%s\n", n, line)
 		}
 	}
 }
