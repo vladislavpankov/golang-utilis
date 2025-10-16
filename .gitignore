@@ -1,67 +1,52 @@
-# Бинарные файлы
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-*.test
-*.out
+# Исполняемые файлы Linux (без расширения)
+/myapp
+/main
+/server
+/client
+/app
+/program
 
-# Папка с собранными бинарниками
+# Или через шаблоны - все файлы без расширения в корне
+/*/
+!/*.*
+/*
+
+# Go бинарники (Linux)
 /bin/
-/dist/
-/output/
+/pkg/
+*.test
+coverage.html
+coverage.txt
 
-# Файлы зависимостей Go
-/go.sum
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
 
-# Кэш Go
-/.cache/
+# C объектные файлы
+*.o
+*.a
+*.so
+*.la
+*.lo
+.deps/
+.dirstamp/
+libtool
 
-# Папка vendor (если используете)
-/vendor/
-
-# IDE и редакторы
-.vscode/
-.idea/
+# Общие
+.DS_Store
 *.swp
 *.swo
 *~
-
-# Операционные системные файлы
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Логи
+.cache/
+.idea/
+.vscode/
 *.log
-
-# Конфиги с чувствительной информацией
 .env
 .env.local
-.env.production
-*.local
-config.yaml
-config.json
-secrets.*
 
-# Файлы профилирования и отладки
-*.pprof
-*.prof
-*.trace
-
-# Coverage reports
-*.coverprofile
-coverage.txt
-coverage.html
-
-# Бенчмарки
-*.bench
-
-# Автогенерируемые файлы
-/assets/bindata.go
-/public/assets/compiled
-
-# Временные файлы
-/tmp/
-/temp/
+# Директории сборки
+build/
+dist/
+out/
+release/
