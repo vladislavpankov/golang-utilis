@@ -23,6 +23,7 @@ func main () {
 			f.Close()
 		}
 	}
+	fmt.Println("program name is ", os.Args[1])
 	for line, n := range counts {
 		if n > 1 {
 			fmt.Printf("%d \t %s \n", n, line)
